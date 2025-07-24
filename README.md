@@ -1,4 +1,3 @@
-
 # Language Exchange App
 
 ## Connecting Language Learners with Native Speakers
@@ -79,7 +78,7 @@
 1. **Clone the repository:**
 
    ```
-   git clone <repository-url>
+   git clone https://github.com/davewish/languageexchangeapp.git
    cd language-exchange-app/frontend # Assuming your React app is in a 'frontend' folder
 
    ```
@@ -108,8 +107,7 @@
 1. **Clone the repository:**
 
    ```
-   git clone <repository-url>
-   cd language-exchange-app/backend # Assuming your Spring Boot app is in a 'backend' folder
+   to be update later 
 
    ```
 2. **Configure Database:**
