@@ -1,70 +1,164 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Language Exchange App
 
-## Available Scripts
+## Connecting Language Learners with Native Speakers
 
-In the project directory, you can run:
+**This application is designed to create a vibrant community where language learners can connect with native speakers for authentic practice and cultural exchange. Our goal is to facilitate effective language acquisition through real-time interaction, fostering confidence and fluency in a supportive environment.**
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* [Project Overview](https://www.google.com/search?q=%23project-overview "null")
+* [Features](https://www.google.com/search?q=%23features "null")
+* [Technologies Used](https://www.google.com/search?q=%23technologies-used "null")
+* [Getting Started](https://www.google.com/search?q=%23getting-started "null")
+  * [Prerequisites](https://www.google.com/search?q=%23prerequisites "null")
+  * [Frontend Setup (React)](https://www.google.com/search?q=%23frontend-setup-react "null")
+  * [Backend Setup (Java Spring Boot)](https://www.google.com/search?q=%23backend-setup-java-spring-boot "null")
+* [Usage](https://www.google.com/search?q=%23usage "null")
+* [Contributing](https://www.google.com/search?q=%23contributing "null")
+* [License](https://www.google.com/search?q=%23license "null")
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Overview
 
-### `npm test`
+**The Language Exchange App aims to bridge the gap between aspiring language learners and native speakers. By providing a platform for direct communication, users can engage in conversations, ask questions, and gain practical experience beyond traditional classroom settings. The application will support various languages and offer tools to enhance the learning experience.**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+**Initial Features (as implemented or planned):**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* **User Interface:** **A basic React frontend with a clean, responsive design.**
+* **User Authentication Placeholders:** **Frontend includes buttons for Login and Register, which will connect to the Spring Boot backend.**
+* **Client-Side User ID:** **A temporary user ID is generated on the client side, to be replaced by actual user IDs from the backend.**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Planned Features:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* **Comprehensive User Authentication:** **Secure sign-up, login, and session management handled by the Spring Boot backend.**
+* **Detailed User Profiles:** **Users can specify native and target languages, interests, and availability.**
+* **Search & Matching:** **Ability to find and connect with partners based on language criteria and other preferences via backend APIs.**
+* **Direct Messaging/Chat:** **Real-time text and potentially voice chat functionality, fully managed by the Spring Boot backend (e.g., using WebSockets).**
+* **User Reputation/Feedback:** **System for users to rate interactions.**
+* **Session Scheduling:** **Tools to arrange and manage language exchange sessions.**
 
-### `npm run eject`
+## Technologies Used
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Frontend
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* **ReactJS:** **A JavaScript library for building user interfaces.**
+* **Tailwind CSS:** **A utility-first CSS framework for rapid UI development and responsive design.**
+* **JavaScript** **`<span class="selected">fetch</span>` **API (or Axios):**** **For making API calls to the Spring Boot backend.**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Backend
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* **Java Spring Boot:** **A powerful framework for building robust, stand-alone, production-grade Spring applications.**
+* **Spring Data JPA / Hibernate:** **For efficient database interaction.**
+* **Spring Security:** **For comprehensive authentication and authorization.**
+* **WebSockets (e.g., Spring WebSockets):** **For real-time communication (e.g., chat, online status).**
 
-## Learn More
+### Database (for Backend)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* **Relational Database (e.g., PostgreSQL, MySQL, H2):** **To be used by the Spring Boot backend for persistent user data, chat history, user profiles, and other core application data.**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Getting Started
 
-### Code Splitting
+**Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Prerequisites
 
-### Analyzing the Bundle Size
+**Before you begin, ensure you have the following installed:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* **Node.js & npm/yarn:** **For the React frontend.**
+  * [Node.js Download](https://nodejs.org/en/download/ "null")
+* **Java Development Kit (JDK) 17 or newer:** **For the Spring Boot backend.**
+  * [OpenJDK](https://openjdk.java.net/install/ "null")
+* **Maven or Gradle:** **Build automation tools for the Spring Boot backend.**
+* **A text editor or IDE:** **(e.g., VS Code, IntelliJ IDEA).**
+* **Git:** **For version control.**
 
-### Making a Progressive Web App
+### Frontend Setup (React)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. **Clone the repository:**
 
-### Advanced Configuration
+   ```
+   git clone <repository-url>
+   cd language-exchange-app/frontend # Assuming your React app is in a 'frontend' folder
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+   ```
+2. **Install dependencies:**
 
-### Deployment
+   ```
+   npm install
+   # or
+   yarn install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+   ```
+3. **Configure Tailwind CSS:** **Ensure** `<span class="selected">tailwind.config.js</span>` **and** `<span class="selected">postcss.config.js</span>` **are correctly set up as per the Tailwind CSS installation guide for React. The provided** `<span class="selected">App.jsx</span>` **already uses Tailwind classes.** *(Note: In the collaborative Canvas environment, Tailwind is automatically handled, but for local setup, these steps are crucial.)*
+4. **Run the frontend:**
 
-### `npm run build` fails to minify
+   ```
+   npm start
+   # or
+   yarn start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   ```
+
+   **The React app will typically run on** `<span class="selected">http://localhost:3000</span>`.
+
+### Backend Setup (Java Spring Boot)
+
+1. **Clone the repository:**
+
+   ```
+   git clone <repository-url>
+   cd language-exchange-app/backend # Assuming your Spring Boot app is in a 'backend' folder
+
+   ```
+2. **Configure Database:**
+
+   * **Set up your preferred relational database (e.g., PostgreSQL, MySQL).**
+   * **Update** `<span class="selected">src/main/resources/application.properties</span>` **(or** `<span class="selected">application.yml</span>`) with your database connection details (URL, username, password).
+   * **Define your JPA entities and repositories.**
+3. **Build the project:**
+
+   ```
+   # Using Maven
+   mvn clean install
+
+   # Using Gradle
+   ./gradlew build
+
+   ```
+4. **Run the backend:**
+
+   ```
+   # Using Maven
+   mvn spring-boot:run
+
+   # Using Gradle
+   ./gradlew bootRun
+
+   ```
+
+   **The Spring Boot application will typically run on** `<span class="selected">http://localhost:8080</span>`.
+
+## Usage
+
+**Once both the frontend and backend are running:**
+
+1. **Open your web browser and navigate to the frontend URL (e.g.,** `<span class="selected">http://localhost:3000</span>`).
+2. **The application will display a temporary client-side user ID.**
+3. **Use the "Login (Placeholder)" and "Register (Placeholder)" buttons. These will eventually trigger API calls to your Spring Boot backend for actual authentication.**
+4. **Once authentication is implemented on the backend, the frontend will display the authenticated user's ID and allow for logout.**
+
+## Contributing
+
+**Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are**  **greatly appreciated** **.**
+
+1. **Fork the Project**
+2. **Create your Feature Branch (**`<span class="selected">git checkout -b feature/AmazingFeature</span>`)
+3. **Commit your Changes (**`<span class="selected">git commit -m 'Add some AmazingFeature'</span>`)
+4. **Push to the Branch (**`<span class="selected">git push origin feature/AmazingFeature</span>`)
+5. **Open a Pull Request**
+
+## License
+
+1. **Distributed under the MIT License. See** `<span class="selected">LICENSE</span>` **for more information.**
