@@ -77,7 +77,7 @@ Before you begin, ensure you have the following installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/davewish/languageexchangeapp.git
+   git clone https://github.com/davewish/language-exchange-appfrontend.git
    cd language-exchange-app-frontend
    ```
 2. Install dependencies:
